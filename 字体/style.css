@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?43rrne');
+  src:  url('fonts/icomoon.eot?43rrne#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?43rrne') format('truetype'),
+    url('fonts/icomoon.woff?43rrne') format('woff'),
+    url('fonts/icomoon.svg?43rrne#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-library:before {
+  content: "\e921";
+}
+.icon-file-text:before {
+  content: "\e922";
+}
+.icon-file-text2:before {
+  content: "\e926";
+}
+.icon-file-picture:before {
+  content: "\e927";
+}
+.icon-bubble:before {
+  content: "\e96b";
+}
+.icon-key:before {
+  content: "\e98d";
+}
+.icon-key2:before {
+  content: "\e98e";
+}
+.icon-eye:before {
+  content: "\e9ce";
+}
+.icon-eye-plus:before {
+  content: "\e9cf";
+}
+.icon-eye-minus:before {
+  content: "\e9d0";
+}
+.icon-eye-blocked:before {
+  content: "\e9d1";
+}

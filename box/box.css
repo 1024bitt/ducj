@@ -1,0 +1,250 @@
+/* .lianxiren ul{
+     float: left;
+     margin-right: 10px;
+}
+.lianxiren ul li{
+     width: 320px;
+     height: 45px;
+     margin-bottom: 5px;
+     line-height: 45px;
+     text-indent: 2em;
+}
+.lianxiren ul li:hover{
+     color: #ff6700;
+} */
+
+
+/* 二、共识内容设计开始 */
+
+.concat_detail img {
+    margin-left: 300px;
+}
+
+.content .all_detail table {
+    float: right;
+    margin-bottom: 1000px;
+    width: 800px;
+}
+
+.content .all_detail table th {
+    border: 1px black solid;
+    padding: 10px 0;
+}
+
+.content .all_detail table td {
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.content .all_detail table tr .neirong {
+    width: 500px;
+}
+
+
+/* 共识内容设计结束 */
+
+
+/* 三、广告发内容设计开始 */
+
+.law h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.law h4 {
+    font-size: 21px;
+    line-height: 35px;
+    font-weight: 600;
+}
+
+.law p {
+    font-size: 19px;
+    line-height: 30px;
+}
+
+
+/* 三、广告发内容设计结束 */
+
+
+/* 四、产权材料示例开始 */
+
+.content .img{
+    height: 440px;
+    width: 750px;
+    /* border: 1px black solid; */
+}
+.content .img img{
+    /* width: 100%; */
+    height: 92% ;
+}
+.img .file_name{
+    padding-left: 60px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* 产权材料示例结束 */
+
+
+/* FQA模块开始设置 */
+
+.content .detail ul li button {
+    width: 172px;
+}
+
+.content .detail ul li img {
+    width: 195px;
+    border: 1px black solid;
+}
+
+.content .detail ul li .img div {
+    height: 140px;
+    width: 195px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    ;
+}
+
+.content .detail ul li .img div h3 {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #ff6700;
+}
+
+
+/* 学习材料示例开始 */
+
+.meeting_files {
+    height: 100px;
+    /* border: 1px black solid; */
+}
+
+.meeting_files table {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.meeting_files table th:nth-child(1) {
+    width: 300px;
+}
+
+.meeting_files table th:nth-child(2) {
+    width: 900px;
+}
+
+.meeting_files table th {
+    background-color: #ff6700;
+    height: 50px;
+    border: 1px black solid;
+    font-size: 18px;
+}
+
+.meeting_files table td {
+    height: 60px;
+    border: 1px black solid;
+}
+
+.meeting_files table tr td:nth-child(2) {
+    text-align: left;
+}
+
+.meeting_files table td a {
+    color: black;
+}
+
+.meeting_files table td a:hover {
+    color: red;
+    font-weight: 600;
+}
+
+
+/* 检查工作内容开始 */
+
+.check_content ul {
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.check_content ul {
+    width: 400px;
+}
+
+.check_content ul li {
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+}
+
+.check_content ul li:hover {
+    color: red;
+    font-weight: 600;
+}
+
+.check_content button {
+    width: 100px;
+    height: 30px;
+}
+
+.check_content ul li input:visited {
+    color: red;
+}
+
+#clear_all {
+    border-radius: 15px;
+    border-color: #ff6700;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#clear_all:active {
+    background-color: #ff6700;
+}
+
+
+/* 检查工作内容结束 */
+
+/* 联系人开始 */
+
+.contact_content table{
+    /* border: black 1px solid; */
+    font-size: 16px;
+}
+
+.contact_content table tr td,th{
+    border: 1px solid black;
+    padding: 10px 30px;
+    text-align: center;
+}
+.contact_content table tr td:nth-child(5){
+    padding: 0;
+}
+.contact_content table tr td button{
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 8px;
+}
+.contact_content table tr td button:active{
+    color: #5b6f7c;
+    background-color: transparent;
+}
+
+#input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -10;
+}
+/* 联系人结束 */

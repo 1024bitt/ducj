@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>授权审核话术</title>
+    <link rel="shortcut icon" href=" favicon.ico" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        window.onload = function () {
+            // 获取到所有按钮元素
+            var btns = document.querySelectorAll(".temp table tr td button")
+            var input = document.getElementById("input")
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].onclick = function () {
+                    input.value = this.innerHTML;
+                    input.select();
+                    document.execCommand("copy");
+                }
+            }
+        }
+    </script>
+    <style>
+        .content .temp button {
+            height: 55px;
+            text-align: left;
+            padding-left: 4%;
+        }
+
+        em {
+            color: red;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shortcut">
+        <div class="w">
+            <ul>
+                <li><a href="http://172.16.8.38/VIEW/Login/Login.html" target="_blank">麦田在线</a></li>
+                <li><a href="https://mail.maitian.cn/coremail/" target="_blank">Maitian邮件系统</a></li>
+                <li><a href="http://172.16.8.120/maimai/pages/main/logins.jsp" target="_blank">值班电话管理系统</a></li>
+                <li><a href="http://172.16.8.61/forsales/index.jsp" target="_blank">公盘系统</a></li>
+                <li><a href="http://172.16.1.3:8080/rentSystem/rent_search.aspx" target="_blank">租赁系统</a></li>
+                <li><a href="https://v.zmengzhu.com/play/10141267" target="_blank">麦芽堂</a></li>
+                <li><a href="http://yes.itissm.com/user/login" target="_blank">云信留客</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="head w">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png"></a>
+        </div>
+        <div class="nav_list">
+            <ul>
+                <li><a href="./decoration/pass.html">pass</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">授权委托</a></li>
+                <li><a href="#">钥匙</a></li>
+                <li><a href="#">业绩问题</a></li>
+                <li><a href="#">共识</a></li>
+                <li><a href="#">制度</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 正文内容 -->
+    <div class="content w">
+        <!-- 菜单部分 -->
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">返回上一级</a></li>
+                <li><a href="#1"> 1.【租赁举证回复模板】</a></li>
+                <li><a href="#2"> 2.【未发审批/视频】&【录屏方式】</a></li>
+                <li><a href="#3"> 3.【录屏日期】&【致电/沟通时效】</a></li>
+                <li><a href="#4"> 4.【微信检索方式】&【录音检索方式】</a></li>
+                <li><a href="#5"> 5.【业主电话】&【房屋坐落】</a></li>
+                <li><a href="#6"> 6.【报价】&【视频内容】</a></li>
+                <li><a href="#7"> 7.【其他】&【授权】</a></li>
+            </ul>
+        </div>
+        <!-- 实例部分 -->
+        <div class="temp">
+            <textarea id="input"></textarea>
+            <div id="1">
+                <table>
+                    <tr>
+                        <th> 1.租赁举证回复模板</th>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText101()">举证有效（验证码xxx）处理人：xxx-xxx举证</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button
+                                onclick="copyText102()">举证无效，无效原因xxx（举证规则详见公众号“房客欧麦嘎”-“常见问题”-“租赁视频验证流程”）处理人：xxx-xxx举证</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText103()">举证有效，此次抽查数据免除处罚不计入考核，请在意向变动的次日24点前下架房源；处理人： ***</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <button
+                                onclick="copyText104()">您的XX房源举证有效，验证码为【XXX】；10分钟后总部会处理其他伙伴对本房源发起的举证，请及时调整名下限量房源并输入验证码完成验证；</button>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+            <div id="2">
+                <table>
+                    <tr>
+                        <th> 2.【未发审批/视频】&【录屏方式】</th>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText201()">【未发起审批】如需租赁举证，请发送视频后同时发起审批；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText202()">【未发视频】如需租赁举证，请发起审批后同时将视频发至“房客规则举证”账号；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText203()">【录屏方式】无效，不可剪辑/拼接；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText204()">【录屏无声音】与业主沟通内容无声音；</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="3">
+                <table>
+                    <tr>
+                        <th> 3.【录屏日期】&【致电/沟通时效】</th>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText301()">【录屏日期】未体现；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText302()">【录屏日期】不清晰；</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText303()">【录屏日期】超时效，需为佐证视频上传前一日至申请当日；</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText304()">【录屏日期】超时效，需为抽查前一日前一日至后一日；</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText305()">【致电/沟通时间】未体现；</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText306()">【沟通内容】超时效，与业主聊天时间需为佐证视频上传前一日至申请当日（且需体现报价）；</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText307()">【沟通内容】超时效，与业主聊天时间需为抽查前一日前一日至后一日（且需体现报价）；</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button onclick="copyText308()"
+                                style="color:red ;font-weight: 600;">【沟通内容】超时效，与业主聊天时间需为举报受理前一日至申请当日（且需体现报价）；</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div id="4">
+                <table>
+                    <tr>
+                        <th>4.【微信检索方式】&【录音检索方式】</th>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText501()">【微信检索方式】不对，建议在添加朋友处输入与上传佐证视频时公盘电话一致的号码检索；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button
+                                onclick="copyText502()">【微信进入群聊方式】不对，建议在添加朋友处输入与上传佐证视频时公盘电话一致的号码检索，点击更多信息，点击“我和他的共同群聊”；</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText503()">【无微信添加朋友操作】未用与上传佐证视频时公盘电话一致的号码从微信添加朋友处检索；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText504()">【录音检索方式】无效，文件夹里的录音文件名可以更改，需要在通讯录点开录音；</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="5">
+                <table>
+                    <tr>
+                        <th>5.【业主电话】&【房屋坐落】</th>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText401()">【业主电话】与上传佐证视频时公盘电话不一致；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText402()">【业主电话】未体现与上传佐证视频时公盘电话一致的号码；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText403()">【业主电话】不清晰；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText404()">【物业地址】无法识别与公盘为同一房源；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText405()">【房屋坐落】举证视频中体现的不完整；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText406()">【房屋坐落】与公盘不一致；</button></td>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div id="6">
+                <table>
+                    <tr>
+                        <th> 6.【报价】&【视频内容】</th>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText601()">【报价】未体现；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText602()">【报价】不明确；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText603()">【报价】与公盘报价不一致；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText604()">【报价】业主未回复/业主未确认；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText605()">【视频内容】无效，应上传符合举证要求的视频；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText606()">【视频内容】未体现，应上传符合举证要求的视频；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText607()">【不符合录入系统要求】业主明确表示不允许麦田登记系统/不允许麦田出租/不允许麦田带客户；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText608()">【起租日期】不符合要求，举证内容需体现一个月内可以起租；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText609()"
+                                style="color:red ;font-weight: 600;">【意向变动日期】需明确体现出房子不租/已租日期；</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="7">
+                <table>
+                    <tr>
+                        <th> 7.【其他】&【授权】</th>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText701()">【举证时间】超时效；</button></td>
+                    </tr>
+
+                    <tr>
+                        <td> <button onclick="copyText702()">【审批类型】申请错误；</button></td>
+                    </tr>
+
+                    <tr>
+                        <td> <button onclick="copyText703()">【房源未检索到】请确认公盘房屋坐落；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText704()">【重复审批】已处理，请勿重复发起审批；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText705()">【报价】与公盘报价不一致；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText706()">【报价】授权委托书无报价，需体现报价且与公盘一致；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText707()">【租赁/买卖授权审核拒绝】无成功上传系统并审核通过的租赁授权委托书；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText708()">【租赁/买卖授权审核拒绝】无成功上传系统并审核通过的租赁/买卖授权委托书；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText709()">【业主电话】与上传佐证视频时公盘业主电话不一致；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText7010()">【签署日期】不满足佐证视频发起的前一日至申请截止时间；</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="copyText711()">【举证方式】租赁不支持钥匙举证，请参考模板及要求；</button></td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

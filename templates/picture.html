@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片审核话术</title>
+    <link rel="shortcut icon" href=" favicon.ico" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        window.onload = function () {
+            // 获取到所有按钮元素
+            var btns = document.querySelectorAll(".content .temp div table tr td button")
+            var input = document.getElementById("input")
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].onclick = function () {
+                    input.value = this.innerHTML;
+                    input.select();
+                    document.execCommand("copy");
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="shortcut">
+        <div class="w">
+            <ul>
+                <li><a href="http://172.16.8.38/VIEW/Login/Login.html" target="_blank">麦田在线</a></li>
+                <li><a href="https://mail.maitian.cn/coremail/" target="_blank">Maitian邮件系统</a></li>
+                <li><a href="http://172.16.8.120/maimai/pages/main/logins.jsp" target="_blank">值班电话管理系统</a></li>
+                <li><a href="http://172.16.8.61/forsales/index.jsp" target="_blank">公盘系统</a></li>
+                <li><a href="http://172.16.1.3:8080/rentSystem/rent_search.aspx" target="_blank">租赁系统</a></li>
+                <li><a href="https://v.zmengzhu.com/play/10141267" target="_blank">麦芽堂</a></li>
+                <li><a href="http://yes.itissm.com/user/login" target="_blank">云信留客</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="head w">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png"></a>
+        </div>
+        <div class="nav_list">
+            <ul>
+                <li><a href="./decoration/pass.html">pass</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">授权委托</a></li>
+                <li><a href="#">钥匙</a></li>
+                <li><a href="#">业绩问题</a></li>
+                <li><a href="#">共识</a></li>
+                <li><a href="#">制度</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="content w">
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">返回上一级</a></li>
+                <li><a href="#1">一、房屋类型不全</a></li>
+                <li><a href="#2">二、清晰度不够</a></li>
+                <li><a href="#3">三、非全景全貌</a></li>
+                <li><a href="#4">四、拍摄到人物或业主照片</a></li>
+                <li><a href="#5">五、修改痕迹严重</a></li>
+                <li><a href="#6">六、有水印</a></li>
+                <li><a href="#7">七、有字样或贴图</a></li>
+                <li><a href="#8">八、其他</a></li>
+                <li><a href="#9">九、有拍摄日期</a></li>
+            </ul>
+        </div>
+        <div class="temp">
+            <textarea id="input"></textarea>
+            <div id="1">
+                <table>
+                    <tr>
+                        <th>一、房屋类型不全</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="copyText1()">缺少XXX，如有改动，请纠错公盘居室类型后再上传；</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="copyText1b()">缺少户型图；</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div id="2">
+                <table>
+                    <tr>
+                        <th>二、清晰度不够</th>
+                    </tr>
+                    <tr>
+                        <td style="color: #ff6700;font-weight: 600;">总结：曝光严重/光线暗/清晰度差；</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText2()">曝光严重；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText3()">光线暗；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText4()">清晰度差；</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="3">
+                <table>
+                    <tr>
+                        <th>三、非全景全貌</th>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText5()">非全景全貌；</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="4">
+                <table>
+                    <tr>
+                        <th>四、拍摄到人物或业主照片</th>
+                    </tr>
+                    <tr>
+                        <td style="color: #ff6700;font-weight: 600;">总结：有人影/人/人局部身体/动物/业主照片（需透明马赛克/虚化处理，非业主照片需备注）；
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText6()">有人影；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText7()">有人或人局部身体；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText8()">有动物；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText9()">有业主照片（需透明马赛克/虚化处理，且不得超出相框，非业主照片需备注)；</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="5">
+                <table>
+                    <tr>
+                        <th>五、修改痕迹严重</th>
+                    </tr>
+                    <tr>
+                        <td style="color: #ff6700;font-weight: 600;">总结：变形/旋转/倾斜/有涂改/滤镜；</td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText10()">变形；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText11()">旋转；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText12()">倾斜；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText13()">有涂改；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText13()">有涂改（若为业主照片，需透明马赛克/虚化且不得超出业主照片边缘）；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText14()">有滤镜；</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="6">
+                <table>
+                    <tr>
+                        <th>六、有水印</th>
+                    </tr>
+                    <tr>
+                        <td style="color: #ff6700;font-weight: 600;">总结：有麦田双重水印/其他公司水印/软件水印；</td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText15()">有麦田多重水印；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText16()">有其他公司水印；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText17()">圆形水印；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText18()">有软件水印；</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="7">
+                <table>
+                    <tr>
+                        <th>七、有字样或贴图</th>
+                    </tr>
+                    <tr>
+                        <td style="color: #ff6700; font-weight: 600;">总结：有电话号码/房间号/二维码/车牌号/贴图；</td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText19()">拍到电话号码；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText20()">拍到房间号；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText21()">拍到二维码；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText22()">拍到车牌号；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText23()">有贴图；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText23()">有产权人信息（非产权人信息需备注）；</button></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div id="8">
+                <table>
+                    <tr>
+                        <th>八、其他</th>
+                    </tr>
+                    <tr>
+                        <td style="color: #ff6700;font-weight: 600;">
+                            总结：有遮挡/私密衣物/尺寸比例不符合4:3/不符合替换标准/不可传外景图/外景图片将影响外网考评，建议不要上传/不可使用效果图/车库车库仓储图片无需上传/图片传错类型；
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText24()">有遮挡；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText25()">有私密衣物（请重新拍摄上传）；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText26()">尺寸比例不符合4:3(请重新拍摄上传)；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText27()">*尺寸比例不符合4:3(请重新拍摄上传)；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText28()">不可传外景图；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText29()">外景图片将影响外网考评，建议不要上传；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText30()">不可使用效果图；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText31()">车位/车库/仓储图片无需上传；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText32()">图片传错类型；</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText32()">除客厅外的图片不允许俯拍；</button></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div id="9">
+                <table>
+                    <tr>
+                        <th>九、有拍摄日期</th>
+                    </tr>
+                    <tr>
+                        <td><button onclick="copyText33()">有拍摄日期；</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

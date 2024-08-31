@@ -1,0 +1,76 @@
+.w{
+     width: 1200px;
+     margin: 0 auto;
+}
+.fl{
+     float: left;
+}
+.fr{
+     float: right;
+}
+.shortcut{
+     position: fixed;
+     height: 40px;
+     width: 100%;
+     background-color: #333;
+}
+.blank{
+     height: 40px;
+}
+.clearfix::after{
+     content: "123";
+     height: 10px;
+     clear: both;
+}
+.shortcut .w ul li{
+     margin-top: 9px;
+     float: left;
+     margin-right: 10px;
+     background-color: #333;
+     border-right: 2px rgba(3, 3,3, 0.3) solid;
+ }
+ .shortcut .w ul li a{
+     padding: 0 35px;
+     font-size: 12px;
+     line-height: 18px;
+     color: #B0B0B0;
+     background-color: #333;
+ }
+ .shortcut .w ul li a:hover{
+     color: #fff;
+ }
+ .head{
+     margin: 15px auto;
+     height: 85px;
+ }
+ .head .logo{
+     margin-top: 13.75px;
+     float: left;
+     position: fixed;
+     width: 85px;
+ }
+ .head .logo img{
+     width: 100%;
+ }
+ .head .nav_list{
+     margin-left: 400px;
+     float: left;
+ }
+ .head .nav_list ul li{
+     margin-right: 20px;
+     float: left;
+     margin-top: 17.5px;
+ }
+ .head .nav_list ul li a{
+     line-height: 40px;
+     padding: 0 10px;
+     color: #333;
+     font-size:18px;
+ }
+ .head .nav_list ul li a:hover{
+     color: #ff6700;
+ }
+ .head .nav_list ul li:hover{
+     border-bottom: 3px solid rgba(255, 103, 0);
+ }
+ 

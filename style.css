@@ -1,0 +1,253 @@
+/* 二、话术类型部分设计开始 */
+.all_reason{
+    float: left;
+}
+.tip{
+    float: left;
+    margin-left: 10px;
+    height: 330px;
+    width: 850px;
+}
+.tip ul li{
+    float: left;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    width: 160px;
+    height: 160px;
+    transition: all 0.2s;
+    /* border: 1px solid black; */
+}
+.tip ul li:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.tip ul li a{
+    margin: 0 11px;
+    display: block;
+    width: 140px;
+    height: 160px;
+}
+.tip ul li a img{
+    height: 50%;
+    margin-top: 18px;
+}
+.tip ul li a h4{
+    color: black;
+    font-weight: 500;
+    margin-top: 14px;
+}
+.content .all_reason ul li a{
+    display: block;
+    height: 55px;
+    width: 300px;
+    line-height: 55px;
+    font-size: 17px;
+    text-indent: 1.5em;
+    color: #fff;
+    background-color: rgba(105,101,101,.6);
+    transition: all .2s;
+}
+.content .all_reason ul li a:hover{
+    background-color: #ff6700;
+}
+
+/* 话术类型设计部分结束 */
+/* 房源审核话术开始 */
+.content .menu{
+    position: fixed;
+    top: 155px;
+    float: left;
+    width: 370px;
+    height: 430px;
+    overflow: auto;
+
+}
+.content .menu ul li a{
+    display: block;
+    height: 50px;
+    width: 350px;
+    line-height: 50px;
+    font-size: 17px;
+    text-indent: 1.5em;
+    color: #fff;
+    background-color: rgba(105,101,101,.6);
+}
+.content .menu ul li a:hover{
+    background-color: #ff6700;
+}
+.content .detail{
+    float: right;
+    width: 800px;
+}
+.content .detail ul li span{
+    display: block;
+    height: 40px;
+    width: 699px;
+    background-color: #ff6700;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.content .detail ul li em{
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
+.content .detail ul #input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -10;
+}
+.button-house{
+    margin: 24px 0 0 0 ;
+}
+.content .detail ul li button{
+    height: 40px;
+    width: 230px;
+    border:2px solid #4CAF50 ;
+    border-radius:5px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: white;
+    transition: all 0.4s;
+}
+.content .detail ul li button:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+.content .detail ul li button:active{
+    background-color: hsl(122, 45%, 14%);
+}
+.content .detail ul li{
+    font-size: 15px;
+    padding: 130px 0px 0px 0px;
+    margin-bottom: 1000px;
+}
+
+/* 房源审核话术结束 */
+/* 带看话术开始 */
+.return{
+    margin: 15px 0px;
+}
+.return h3 a{
+    display: block;
+    width: 140px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgba(105,101,101,.6);
+}
+.return h3 a:hover{
+    background-color: #ff6700;
+}
+/* 带看看话术结束 */
+/* 授权委托书开始 */
+.temp{
+    float: right;
+    width: 650px;
+}
+.temp div{
+    border: 1px #f0f0f0 solid;
+    margin-bottom: 1500px;
+}
+.temp div table{
+    width: 700px;
+    border: solid #f0f0f0 1px;
+    margin: 120px 0 0 0 ;
+    font-size: 16px;
+    line-height: 45px;
+}
+.temp div table tr th{
+    line-height: 40px;
+    background-color: #ff6700;
+    color: #fff;
+}
+/* 按钮的设置，以及将textarea隐藏 */
+.content .temp button{
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    border:2px solid #4CAF50 ;
+    border-radius:12px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    transition: all 0.4s;
+}
+.content .temp button:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+.content .temp button:active{
+    background-color: hsl(122, 45%, 14%);
+}
+.content .temp #input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -10;
+}
+/* 按钮的设置，以及将textarea隐藏结束 */
+/* 授权委托书结束 */
+/* 图片审核规范 */
+.picture ul{
+    float: right;
+    width: 800px;
+}
+.picture ul li img{
+    width: 100%;
+}
+/* 按钮的设置，以及将textarea隐藏 */
+.value button{
+    height: 45px;
+    width: 170px;
+    text-align: center;
+    border:2px solid #4CAF50 ;
+    border-radius:12px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    transition: all 0.4s;
+}
+.value button:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+.value button:active{
+    background-color: hsl(122, 45%, 14%);
+}
+.value #input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -10;
+}
+#input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -10;
+}
+/* 按钮的设置，以及将textarea隐藏结束 */
+.value .daikanchufaneirong{
+     margin-top: 20px;
+     padding: 10px;
+     border: 2px #4CAF50 solid;
+}
+.value .daikanchufaneirong EM{
+     color: red;
+     font-weight: 600;
+     font-size: 20px;
+}
